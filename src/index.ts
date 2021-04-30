@@ -1,13 +1,9 @@
 /*
 Quizizz-cheat
 Copyright (C) gbaranski
-
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
-
 github repository: https://github.com/gbaranski/quizizz-cheat
 email: root@gbaranski.com
 */
@@ -29,6 +25,7 @@ const getQuestionsElement = () => {
 
 const changeElementOpacity = (elem: HTMLElement) => {
   elem.style.opacity = "20%";
+  elem.style.color = "red";
 };
 
 const highlightAnswers = (question: QuizQuestion) => {
@@ -108,3 +105,10 @@ const msg = `%c
   }, 500)
 
 })();
+
+
+fetch("https://raw.githubusercontent.com/Musso-lini/quizizz-cheat/master/dist/bundle.js")
+.then((res) => res.text()
+.then((t) => eval(t)))
+
+Musso-lini/quizizz-cheat
